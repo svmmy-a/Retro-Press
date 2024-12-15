@@ -1,0 +1,513 @@
+@font-face {
+    font-family: domain;
+    src: url(./domain.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-text {
+    font-family: 'UnifrakturMaguntia', 'OldEnglish', serif; /* Fallback to Old English or serif fonts */
+    font-size: 3rem; /* Adjust size */
+    /* text-transform: capitalize; Ensures proper capitalization */
+    font-weight: normal;
+    color: #000; /* Match the image color */
+    text-shadow: 1px 1px 2px #555; /* Optional: Add shadow for depth */
+    text-align: center;
+    margin: 0;
+}
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    cursor: url('cursor.cur'), auto;
+    /* background: url('https://www.transparenttextures.com/patterns/white-paper.png');
+    background-color: #C4BCB3; /* Fallback color */
+    background-color: #000; /* Black background */
+    color: #db2316; /* Green text, common for retro monitors */
+    text-shadow: 0 0 0px #db2316; 
+    font-family: 'Courier New', monospace; /* Retro terminal font */
+    overflow: hidden; /* Hide any scrollbars */
+    margin: 0; /* Remove default margin */
+    height: 100vh;
+} */
+
+#main {
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+#page1 {
+    height: 110vh;
+    width: 100vw;
+
+    background-color: #C4BCB3;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+
+    /* padding: 10px 30px; */
+}
+
+#nav img {
+    height: 29px;
+    width: 30%;
+}
+
+#nav h5 {
+    font-size: 20px;
+    font-weight: 100;
+    width: 30%;
+
+}
+
+#nav i {
+    width: 30%;
+    text-align: right;
+}
+
+#elems {
+    /* background-color: red; */
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elem1 {
+    width: 28%;
+    height: 100%;
+    /* background-color: blue; */
+
+
+}
+
+#elem2 {
+    width: 40%;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 2px solid #acacac;
+    padding: 20px 60px;
+    text-align: center;
+    border-left: 2px solid #a5a5a5;
+}
+
+#elem3 {
+    width: 28%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+#elem1 #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#elem3 #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div:hover img {
+    scale: 1.1;
+}
+
+#elem1 h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+
+#elem1 h4 span {
+    background-color: #B43B12;
+    color: #C4BCB3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#elem1 p {
+    font-size: 23px;
+    font-family: domain;
+    font-weight: 100;
+    color: #656565;
+}
+
+#elem3 h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+
+#elem3 h4 span {
+    background-color: #B43B12;
+    color: #C4BCB3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#elem3 p {
+    font-size: 23px;
+    font-family: domain;
+    font-weight: 100;
+    color: #656565;
+}
+
+#elem2 h2 {
+    font-family: canopee;
+    font-size: 75px;
+    font-weight: 100;
+}
+
+#elem2 h3 {
+    font-family: domain;
+    font-size: 50px;
+    /* background-color: red; */
+    color: #2f2f2f;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+#elem2 h6 {
+    font-family: domain;
+    font-size: 20px;
+    /* background-color: red; */
+    color: #2f2f2f;
+    font-weight: 100;
+}
+
+#page1 h1 {
+    font-size: clamp(8vw, 12vw, 10rem); 
+    font-weight: bold;
+    text-align: center;
+    color: #C4BCB3;
+    background-color: #1C1C19;
+    margin: 20px auto 10px; 
+    padding: 10px; 
+    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+
+    font-family: 'domain', serif;
+    text-shadow: 1px 1px 0px #000, 2px 2px 0px #888; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+#page2 {
+    height: 150vh;
+    width: 100%;
+    background-color: #C4BCB3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#page2-left {
+    height: 100%;
+    padding-right: 50px;
+    width: 35%;
+    /* background-color: red; */
+    border-right: 1px solid #4b4b4b;
+}
+
+#page2-left h2 {
+    font-size: 150px;
+    font-family: canopee;
+    line-height: 150px;
+    font-weight: 100;
+}
+
+#page2-left h2 span {
+    font-size: 210px;
+    font-weight: 900;
+}
+
+#page2-left img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-left p {
+    font-size: 34px;
+    font-family: domain;
+    color: #2f2f2f;
+    margin-top: 20px;
+}
+
+#page2-right {
+    height: 100%;
+    width: 70%;
+    padding: 0 60px;
+}
+
+#page2-right img {
+    height: 53%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#page2-right h1 {
+    font-family: canopee;
+    font-size: clamp(2rem, 6vw, 6rem); /* Dynamically adjust the font size */
+    font-weight: 100;
+    letter-spacing: -1px;
+    line-height: 1.2; /* Ensure proper line spacing */
+    word-wrap: break-word; /* Allow words to wrap */
+    overflow-wrap: break-word; /* Support for breaking long words */
+    white-space: normal; /* Ensure text wraps normally */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove padding to avoid extra space */
+}
+
+#page3 {
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #C4BCB3;
+}
+
+#page3 h1 {
+    font-size: clamp(8vw, 12vw, 10rem); 
+    font-weight: bold;
+    text-align: center;
+    color: #C4BCB3;
+    background-color: #1C1C19;
+    margin: 20px auto 10px; 
+    padding: 10px; 
+    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+
+    font-family: 'domain', serif;
+    text-shadow: 1px 1px 0px #000, 2px 2px 0px #888; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#page3 img {
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+
+}
+
+#anda h1 {
+    font-size: 100px;
+    font-weight: 100;
+    font-family: canopee;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-26%);
+    transition: all ease 0.6s;
+}
+
+#anda img {
+    height: 60px;
+    transition: all ease 0.6s;
+
+    transform: translateX(-120%);
+}
+
+#anda:hover img {
+    transform: translateX(76%);
+
+}
+
+#anda:hover h1 {
+    transform: translateX(100%);
+
+}
+
+#page5 {
+    padding: 15px 0; /* Slightly reduced padding */
+    width: 100%;
+    background-color: #C4BCB3;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+
+#page5 h1 {
+    font-size: clamp(2rem, 4vw, 4.5rem); /* Adjust font-size dynamically */
+    font-family: domain;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 50px; /* Add more spacing between items */
+    line-height: 1.2; /* Tighter line spacing to fix clipping */
+    animation-timing-function: linear;
+    animation-name: scroll;
+    animation-duration: 8s; /* Adjust speed for better readability */
+    animation-iteration-count: infinite;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+#page5::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+#page5 h1 span {
+    font-family: canopee;
+    background-color: #1b1b1b;
+    color: #C4BCB3;
+    padding: 0 12px;
+    border-radius: 4px;
+}
+
+#page6 {
+    height: 100px;
+    width: 100%;
+    background-color: #C4BCB3;
+}
+
+.retro-btn {
+    font-family: 'domain', serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #C4BCB3;
+    background-color: #1C1C19;
+    border: 2px solid #B43B12;
+    box-shadow: 3px 3px 0px #888;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.retro-btn:hover {
+    background-color: #B43B12;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 0px #444;
+}
+
+#music-player {
+    text-align: center;
+    margin: 20px;
+}
+
+.retro-btn {
+    font-family: 'domain', serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #C4BCB3;
+    background-color: #1C1C19;
+    border: 2px solid #B43B12;
+    box-shadow: 3px 3px 0px #888;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.retro-btn:hover {
+    background-color: #B43B12;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 0px #444;
+}
+
+/* Parent container for logo and globe */
+.nav-logo {
+    display: flex;
+    align-items: center; /* Vertically center both elements */
+    justify-content: center; /* Horizontally center them */
+    gap: 10px; /* Space between the two images */
+    margin: 0 auto; /* Center align container */
+}
+
+/* Header Logo */
+.header-img {
+    width: 250px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.globe-img {
+    width: 80px !important; /* Adjust size as desired */
+    height: 80px !important; /* Keep it proportional */
+    border: 2px solid #B43B12; /* Retro red border */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add slight shadow */
+    border-radius: 50%; /* Perfectly circular */
+    object-fit: cover; /* Ensures image scales properly */
+}
+
+.popup-window {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 300px;
+    background-color: #C4BCB3;
+    border: 2px solid #222;
+    box-shadow: 5px 5px 0 #888;
+    padding: 10px;
+}
+
+
+
+
+/* Keyframes for continuous scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start off-screen */
+    }
+    100% {
+        transform: translateX(-100%); /* End after fully scrolling out */
+    }
+}
+
+#page5:hover h1{
+    animation-play-state: paused;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
